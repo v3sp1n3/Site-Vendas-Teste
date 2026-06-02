@@ -23,8 +23,6 @@ border:none;
     text-align: left;
 }
 
-/* botão carrinho */
-
 .icone-carrinho{
 position:fixed;
 right:20px;
@@ -39,8 +37,6 @@ box-shadow:0 3px 10px rgba(0,0,0,0.3);
 z-index:1001;
 }
 
-/* fundo escuro */
-
 #overlay{
 position:fixed;
 top:0;
@@ -51,8 +47,6 @@ background:rgba(0,0,0,0.5);
 display:none;
 z-index:1000;
 }
-
-/* produtos */
 
 .container{
 display:grid;
@@ -76,8 +70,6 @@ object-fit:cover;
 border-radius:5px;
 }
 
-/* botões */
-
 button{
 background:#28a745;
 border:none;
@@ -90,8 +82,6 @@ cursor:pointer;
 button:hover{
 background:#218838;
 }
-
-/* carrinho */
 
 #carrinho{
 position:fixed;
@@ -111,8 +101,6 @@ z-index:1002;
 right:-340px;
 }
 
-/* topo carrinho */
-
 .topo-carrinho{
 display:flex;
 justify-content:space-between;
@@ -124,8 +112,6 @@ margin-bottom:10px;
 background:red;
 padding:5px 10px;
 }
-
-/* itens */
 
 .item{
 display:flex;
