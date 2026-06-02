@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>SOS Tech JP</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h2>🛍 SOS Tech JP - Entregas grátis!</h2><div class="fale-conosco"><button><a href="https://api.whatsapp.com/send/?phone=5583981214673&text=%2AOl%C3%A1%2C+vim+do+site+e+quero+saber+mais+informações+sobre+como+vocês+trabalham.%2A" target="_blank">Fale conosco no WhatsApp</a></button></div>
+
+<input type="text" id="busca" placeholder="Buscar produto..." onkeyup="buscar()">
+
+</header>
+
+<!-- botão carrinho -->
+
+<div onclick="toggleCarrinho()" class="icone-carrinho">
+🛒 <span id="contador">0</span>
+</div>
+
+<!-- fundo escuro -->
+
+<div id="overlay" onclick="toggleCarrinho()"></div>
+
+<!-- carrinho -->
+
+<div id="carrinho" class="carrinho-fechado">
+
+<div class="topo-carrinho">
+
+<h3>Carrinho</h3>
+
+<button class="fechar" onclick="toggleCarrinho()">✖</button>
+
+</div>
+
+<div id="lista"></div>
+
+<div class="total">
+Total: R$ <span id="total">0</span>
+</div>
+
+<button class="checkout" onclick="checkout()">Gerar Pedido</button>
+
+<button class="whatsapp" onclick="whatsapp()">
+Comprar via WhatsApp
+</button>
+
+</div>
+
+<div class="container" id="produtos"></div>
+
+<script src="script.js"></script>
+
+<div id="zoom" onclick="fecharZoom()">
+<img id="imgZoom">
+</div>
+
+</body>
+</html>
